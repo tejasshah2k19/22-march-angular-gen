@@ -1,0 +1,37 @@
+ng  new project name 
+
+
+ng s --o 
+
+
+component :- 
+
+
+
+    1   component.ts 
+    2   component.spec.ts 
+    3   component.html
+    4   component.css
+
+
+ng generate component signup 
+
+app.module.ts 
+
+
+-------------------------------
+
+singup page --> firstname email --> input --> submit --> .ts --> service --> call api [ backend api node / spring ]
+
+
+service --> api 
+
+1) return observable 
+2) httpClient -> api call
+
+component
+1) subscribe 
+
+
+signup done 
+list user done 
