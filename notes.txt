@@ -35,3 +35,17 @@ component
 
 signup done 
 list user done 
+--------------------------------------------
+
+    localStorage 
+            setItem("firstName","raj") 
+            getItem("firstName")
+            removeItem("firstName")
+            clear()
+
+ 
+--------------------------------------------
+reactive form 
+
+1) app.module.ts -> ReactiveFormsModule 
+2) ng g c add-product 

@@ -1,0 +1,29 @@
+<h2>Add User</h2>
+
+<form [formGroup]="myForm"  (ngSubmit)="saveUser()">
+
+    FirstName : <input type="text"  formControlName="firstName"  />
+    <span  *ngIf="myForm.get('firstName')?.touched  &&   !myForm.get('firstName')?.valid" class="error">Please Enter FirstName</span>
+     
+    <br><br>
+    Email :<input type="text"  formControlName="email"  />
+
+    <span  *ngIf="myForm.get('email')?.touched  &&   !myForm.get('email')?.valid" class="error">
+    
+      <span *ngIf="myForm.get('email')?.hasError('required')"  >Please Enter Email</span>  
+      <span *ngIf="myForm.get('email')?.hasError('email')"  >Please Enter Valid Email</span>  
+
+    </span>
+ 
+        
+    <br><br>
+    Password :<input type="text"  formControlName="password"  />
+    <br><br>
+    Gender :<input type="text"  formControlName="gender"  />
+    <br><br>
+    ContactNum:<input type="text"  formControlName="contactNum"  />
+    <br><br>
+
+    <button type="submit">Save User</button>
+
+</form>

@@ -28,10 +28,14 @@ export class LoginComponent implements OnInit {
 
     this.sessionService.loginApi(user).subscribe(resp => {
       if (resp.status == 200) {
+       console.log(resp.data);
+       
         this.tsService.success(resp.msg,"",{timeOut:3000})
 
         if(resp.data.role.roleName == "customer"){
+          localStorage.setItem("firstName",resp.data.firstName)
           this.router.navigateByUrl("/home")
+       
         }
         
       } else {
