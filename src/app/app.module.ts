@@ -13,6 +13,8 @@ import { HomeComponent } from './customer/home/home.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { AddProductComponent } from './add-product/add-product.component';
+import { AdminModule } from './admin/admin.module';
+import { UserModule } from './user/user.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,9 @@ import { AddProductComponent } from './add-product/add-product.component';
     HttpClientModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AdminModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

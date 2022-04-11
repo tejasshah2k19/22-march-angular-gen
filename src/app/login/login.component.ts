@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
 
         if(resp.data.role.roleName == "customer"){
           localStorage.setItem("firstName",resp.data.firstName)
-          this.router.navigateByUrl("/home")
+          this.router.navigateByUrl("/user/home")
        
         }
         

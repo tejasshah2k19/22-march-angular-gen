@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SessionService } from '../session.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { SessionService } from '../session.service';
 })
 export class SignupComponent implements OnInit {
 
-  constructor(private sessionService:SessionService) { }
+  constructor(private sessionService:SessionService,private router:Router) { }
 
 
 
@@ -58,9 +59,9 @@ export class SignupComponent implements OnInit {
                     alert(resp.msg);
                 }else{
                     alert(resp.msg);
+                    this.router.navigateByUrl("/login")
                 }
               })
-
           }
   }
 }
