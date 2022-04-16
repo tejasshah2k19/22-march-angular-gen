@@ -49,3 +49,20 @@ reactive form
 
 1) app.module.ts -> ReactiveFormsModule 
 2) ng g c add-product 
+-----------
+
+custom modules 
+
+----------------
+localStorage
+----------------
+
+login --> role user --> user home 
+         admin --> dashboard 
+
+
+  user login --> admin url 
+  admin login -> user url 
+
+  guard | filter -> request - pre process 
+  

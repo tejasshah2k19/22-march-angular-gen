@@ -5,6 +5,7 @@ import { CalcComponent } from './calc/calc.component';
 import { HomeComponent } from './customer/home/home.component';
 import { ListUsersComponent } from './list-users/list-users.component';
 import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:"listusers",component:ListUsersComponent},
   {path:"login",component:LoginComponent},
   {path:"",component:LoginComponent},
-  {path:"adduser",component:AddProductComponent}
+  {path:"adduser",component:AddProductComponent},
+  {path:"logout",component:LogoutComponent}
   
   
   ,

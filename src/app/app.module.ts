@@ -15,6 +15,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AddProductComponent } from './add-product/add-product.component';
 import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
+import { LogoutComponent } from './logout/logout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { UserModule } from './user/user.module';
     ListUsersComponent,
     LoginComponent,
     HomeComponent,
-    AddProductComponent
+    AddProductComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

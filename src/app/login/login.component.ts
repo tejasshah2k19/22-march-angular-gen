@@ -31,11 +31,14 @@ export class LoginComponent implements OnInit {
        console.log(resp.data);
        
         this.tsService.success(resp.msg,"",{timeOut:3000})
-
+        localStorage.setItem("role",resp.data.role.roleName)
         if(resp.data.role.roleName == "customer"){
           localStorage.setItem("firstName",resp.data.firstName)
           this.router.navigateByUrl("/user/home")
        
+        }else if (resp.data.role.roleName == "admin"){
+          localStorage.setItem("firstName",resp.data.firstName)
+          this.router.navigateByUrl("/admin/dashboard")
         }
         
       } else {
