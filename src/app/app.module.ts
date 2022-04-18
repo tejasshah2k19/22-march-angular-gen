@@ -16,6 +16,8 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
 import { LogoutComponent } from './logout/logout.component';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+import { RegisterationComponent } from './registeration/registeration.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,9 @@ import { LogoutComponent } from './logout/logout.component';
     LoginComponent,
     HomeComponent,
     AddProductComponent,
-    LogoutComponent
+    LogoutComponent,
+    PipeDemoComponent,
+    RegisterationComponent
   ],
   imports: [
     BrowserModule,

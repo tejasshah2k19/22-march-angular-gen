@@ -65,4 +65,15 @@ login --> role user --> user home
   admin login -> user url 
 
   guard | filter -> request - pre process 
-  
+
+-----------------
+
+pipe :- 
+
+    pipes are known as filter in previous. 
+    
+
+    name = "royal" 
+
+    {{name | uppercase}}
+

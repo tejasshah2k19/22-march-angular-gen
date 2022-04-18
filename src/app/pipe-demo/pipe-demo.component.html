@@ -1,0 +1,26 @@
+<div class="container">
+    {{name}}<br>
+    {{name | uppercase }}<br>
+    {{name | lowercase }}<br>
+
+
+    <br>
+    {{amount}}
+    <br>
+    {{amount | currency}}
+    <br>
+    {{amount | currency:"INR"}}
+    <br>
+    {{amount | currency:"INR":false}}
+
+    <br><br>
+
+    {{today}}<Br>
+    {{today | date}}
+    <br>
+    {{ today | date:'d/M/y'}}
+    <br>
+    {{today | date:"shortTime"}}
+    <br>
+    {{today | date : "full"}}
+</div>
